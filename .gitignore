@@ -1,0 +1,14 @@
+# исходные фотографии тетрадей — не публикуем
+фотки1/
+фотки2/
+фотки3/
+
+# Quartz build artifacts
+site/node_modules/
+site/public/
+site/.quartz/
+site/.quartz-cache/
+
+# Obsidian local state
+конспекты/.obsidian/workspace.json
+конспекты/.trash/
