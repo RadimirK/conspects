@@ -45,9 +45,9 @@ plugins:
     enabled: true
     options:
       defaultDateType: modified
+      # git отпадает: content — симлинк на конспекты/, git о таком пути не знает
       priority:
         - frontmatter
-        - git
         - filesystem
     order: 10
   - source: "./plugins/tikzjax"
