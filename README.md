@@ -25,10 +25,11 @@ GitHub Actions соберёт сайт и выложит его на Pages. Пр
 
 ## Локальный предпросмотр
 
-Нужен npm (в системе его нет, ставится так):
+Нужен Node 22+ (уже есть) и **npm 10.9.2+**. В репозиториях Ubuntu лежит
+npm 9, которого Quartz не примет (`engine-strict`), поэтому его нужно обновить:
 
 ```bash
-sudo apt install npm
+sudo apt install npm && sudo npm install -g npm@latest
 ```
 
 Дальше:
