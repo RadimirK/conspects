@@ -3,12 +3,19 @@
 фотки2/
 фотки3/
 
-# Quartz build artifacts
+# Quartz
 site/node_modules/
 site/public/
 site/.quartz/
 site/.quartz-cache/
+site/plugins/*/node_modules/
+site/plugins/*/package-lock.json
+# содержит абсолютный путь с локальной машины; в CI пересоздаётся
+site/quartz.lock.json
 
-# Obsidian local state
+# Obsidian
 конспекты/.obsidian/workspace.json
+конспекты/.obsidian/plugins/
 конспекты/.trash/
+
+.DS_Store

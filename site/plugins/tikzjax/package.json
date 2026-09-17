@@ -1,0 +1,35 @@
+{
+  "name": "quartz-plugin-tikzjax",
+  "version": "1.0.0",
+  "description": "Renders ```tikz code blocks to SVG at build time (Obsidian TikZJax compatible)",
+  "type": "module",
+  "private": true,
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "quartz": {
+    "name": "tikzjax",
+    "displayName": "TikZJax",
+    "category": "transformer",
+    "version": "1.0.0",
+    "quartzVersion": ">=5.0.0",
+    "requiresInstall": false,
+    "dependencies": [],
+    "defaultOrder": 15,
+    "defaultEnabled": true,
+    "defaultOptions": {
+      "texPackages": {
+        "amsmath": "",
+        "amssymb": "",
+        "amsfonts": ""
+      },
+      "tikzLibraries": "",
+      "addToPreamble": ""
+    }
+  },
+  "scripts": {
+    "build": "node -e \"process.exit(0)\""
+  }
+}
